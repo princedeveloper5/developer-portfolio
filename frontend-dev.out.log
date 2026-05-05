@@ -1,0 +1,4 @@
+
+> original-vue-portfolio@1.0.0 dev
+> vite --config frontend/vite.config.js --host 127.0.0.1 --port 5173
+

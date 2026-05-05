@@ -1,0 +1,16 @@
+USE vue_portfolio;
+
+ALTER TABLE projects
+  ADD COLUMN IF NOT EXISTS alt_text VARCHAR(255) NOT NULL DEFAULT '' AFTER image_url;
+
+ALTER TABLE profile
+  ADD COLUMN IF NOT EXISTS alt_text VARCHAR(255) NOT NULL DEFAULT '' AFTER portrait_url;
+
+CREATE TABLE IF NOT EXISTS visits (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  path VARCHAR(255) NOT NULL DEFAULT '/',
+  ip_address VARCHAR(80) NOT NULL DEFAULT '',
+  user_agent VARCHAR(500) NOT NULL DEFAULT '',
+  visited_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  INDEX idx_visits_visited_at (visited_at)
+);

@@ -1,0 +1,306 @@
+/* SEO Preview Panel Styles */
+.seo-preview-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.seo-preview-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: #101010;
+}
+
+.seo-preview-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.seo-tab-btn {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: #6a6f76;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.seo-tab-btn:hover {
+  background: rgba(16, 16, 16, 0.05);
+  color: #101010;
+}
+
+.seo-tab-btn.active {
+  background: #0b87f4;
+  color: #ffffff;
+}
+
+.seo-score-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(16, 16, 16, 0.03);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.seo-score-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.seo-score-circle.excellent { background: #22c55e; }
+.seo-score-circle.good { background: #3b82f6; }
+.seo-score-circle.fair { background: #f59e0b; }
+.seo-score-circle.poor { background: #ef4444; }
+
+.seo-score-label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.seo-checklist {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.seo-check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  background: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+}
+
+.seo-check-item.missing {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}
+
+.seo-preview-content {
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid rgba(16, 16, 16, 0.1);
+  border-radius: 8px;
+}
+
+/* Google Preview */
+.google-preview {
+  max-width: 600px;
+}
+
+.google-preview .url {
+  color: #202124;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.google-preview .url span {
+  color: #5f6368;
+}
+
+.google-preview .title {
+  color: #1a0dab;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.google-preview .title:hover {
+  text-decoration: underline;
+}
+
+.google-preview .description {
+  color: #4d5156;
+  font-size: 0.875rem;
+  line-height: 1.58;
+}
+
+/* Twitter/X Preview */
+.twitter-preview {
+  max-width: 500px;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.twitter-preview .card-image {
+  aspect-ratio: 2 / 1;
+  background: #e1e8ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #657786;
+  font-size: 0.875rem;
+}
+
+.twitter-preview .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.twitter-preview .card-content {
+  padding: 0.75rem;
+}
+
+.twitter-preview .card-title {
+  font-weight: 600;
+  color: #0f1419;
+  font-size: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+
+.twitter-preview .card-description {
+  color: #536471;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.twitter-preview .card-url {
+  color: #536471;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* LinkedIn Preview */
+.linkedin-preview {
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.linkedin-preview .post-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.linkedin-preview .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0a66c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.linkedin-preview .author-info {
+  flex: 1;
+}
+
+.linkedin-preview .author-name {
+  font-weight: 600;
+  color: #0a66c2;
+  font-size: 0.9rem;
+}
+
+.linkedin-preview .author-headline {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.linkedin-preview .post-time {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+.linkedin-preview .post-content {
+  color: #333;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.linkedin-preview .link-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.linkedin-preview .link-image {
+  aspect-ratio: 1.91 / 1;
+  background: #f3f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.linkedin-preview .link-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linkedin-preview .link-title {
+  font-weight: 600;
+  color: #333;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Dark Mode */
+.dark-theme .seo-preview-section h4 { color: #f3f4f6; }
+.dark-theme .seo-preview-tabs { border-color: rgba(255, 255, 255, 0.1); }
+.dark-theme .seo-tab-btn { color: #9ca3af; }
+.dark-theme .seo-tab-btn:hover { background: rgba(255, 255, 255, 0.05); color: #f3f4f6; }
+.dark-theme .seo-tab-btn.active { background: #60a5fa; color: #111827; }
+.dark-theme .seo-score-card { background: rgba(255, 255, 255, 0.03); }
+.dark-theme .seo-check-item { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
+.dark-theme .seo-check-item.missing { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+.dark-theme .seo-preview-content { background: #1f2937; border-color: #374151; }
+.dark-theme .google-preview .url { color: #e8eaed; }
+.dark-theme .google-preview .url span { color: #9aa0a6; }
+.dark-theme .google-preview .title { color: #8ab4f8; }
+.dark-theme .google-preview .description { color: #bdc1c6; }
+.dark-theme .twitter-preview { border-color: #374151; }
+.dark-theme .twitter-preview .card-image { background: #374151; color: #9ca3af; }
+.dark-theme .twitter-preview .card-title { color: #f3f4f6; }
+.dark-theme .twitter-preview .card-description { color: #9ca3af; }
+.dark-theme .twitter-preview .card-url { color: #9ca3af; }
+.dark-theme .linkedin-preview { background: #1f2937; border-color: #374151; }
+.dark-theme .linkedin-preview .avatar { background: #60a5fa; }
+.dark-theme .linkedin-preview .author-name { color: #60a5fa; }
+.dark-theme .linkedin-preview .author-headline { color: #9ca3af; }
+.dark-theme .linkedin-preview .post-time { color: #9ca3af; }
+.dark-theme .linkedin-preview .post-content { color: #d1d5db; }
+.dark-theme .linkedin-preview .link-card { border-color: #374151; }
+.dark-theme .linkedin-preview .link-image { background: #374151; }
+.dark-theme .linkedin-preview .link-title { color: #f3f4f6; }
